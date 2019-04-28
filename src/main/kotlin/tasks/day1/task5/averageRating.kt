@@ -16,5 +16,9 @@ individual lessons should be treated separately.
  */
 
 fun School.getAverageRatingForInstructor(instructor: Instructor): Double {
-    TODO()
+    return lessons
+        .filter { it.instructor == instructor }
+        .flatMap { it.rating.values.asSequence() }
+        .average()
+
 }
