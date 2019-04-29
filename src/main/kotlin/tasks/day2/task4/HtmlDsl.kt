@@ -1,4 +1,4 @@
-package tasks.day2.task3
+package tasks.day2.task4
 
 open class Tag(val name: String) {
     private val children = mutableListOf<Tag>()
