@@ -7,7 +7,7 @@ package tasks.day2.task4
  * the BreakfastMenu item.
  */
 
-fun buildMenu(): BreakfastMenu = TODO() /*breakfastMenu {
+fun buildMenu(): BreakfastMenu = breakfastMenu {
     item(
         name = "Belgian Waffles",
         price = 5.95,
@@ -33,7 +33,7 @@ fun buildMenu(): BreakfastMenu = TODO() /*breakfastMenu {
         price = 6.95,
         calories = 950
     )
-}*/
+}
 
 fun main() {
     println(buildMenu())
@@ -48,3 +48,16 @@ data class BreakfastMenuItem(
     val price: Double,
     val calories: Int
 )
+
+fun breakfastMenu(
+    init: BreakfastMenuBuilder.() -> Unit
+) = BreakfastMenuBuilder().apply(init).build()
+
+class BreakfastMenuBuilder {
+    val items = mutableListOf<BreakfastMenuItem>()
+    fun build() = BreakfastMenu(items)
+
+    fun item(name: String, price: Double, calories: Int) {
+        items += BreakfastMenuItem(name, price, calories)
+    }
+}
