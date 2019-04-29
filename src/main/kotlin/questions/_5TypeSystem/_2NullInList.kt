@@ -1,6 +1,6 @@
 package questions._5TypeSystem
 
-import questions._5TypeSystem.JavaClass.dangerousJavaMethod
+import javacode.typesystem.JavaClass.dangerousJavaMethod
 
 fun mightContainNull(): List<Int> {
     val list: List<Int> = arrayListOf(1, 2, 3)

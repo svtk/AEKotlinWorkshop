@@ -1,4 +1,4 @@
-package questions._5TypeSystem;
+package javacode.typesystem;
 
 import java.util.List;
 
