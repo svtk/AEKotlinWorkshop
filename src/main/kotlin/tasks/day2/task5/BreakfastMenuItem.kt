@@ -1,4 +1,4 @@
-package tasks.day2.task4
+package tasks.day2.task5
 
 /*
  * Uncomment the following code and make it compile.

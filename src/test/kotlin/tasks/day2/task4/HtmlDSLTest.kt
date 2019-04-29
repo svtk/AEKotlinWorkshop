@@ -1,4 +1,4 @@
-package tasks.day2.task3
+package tasks.day2.task4
 
 import org.junit.Assert
 import org.junit.Test
