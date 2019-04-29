@@ -1,7 +1,10 @@
 package questions._5TypeSystem
 
+import javacode.typesystem.JavaClass
+
 fun explicitType() {
-    val value: String = JavaClass().value // IllegalStateException: JavaClass().value must not be null
+    // IllegalStateException: JavaClass().value must not be null
+    val value: String = JavaClass().value
     println(value.length)
 }
 

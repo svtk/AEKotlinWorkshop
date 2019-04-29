@@ -1,4 +1,4 @@
-package questions._5TypeSystem;
+package javacode.typesystem;
 
 public class Parent {
     public Parent() {
